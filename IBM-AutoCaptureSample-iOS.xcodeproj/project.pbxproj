@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		780E700C1D217E910072EE7B /* IBMCaptureSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 780E70031D217DD00072EE7B /* IBMCaptureSDK.framework */; };
+		780E700D1D217E910072EE7B /* IBMCaptureSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 780E70031D217DD00072EE7B /* IBMCaptureSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		780E700E1D217E920072EE7B /* IBMCaptureUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 780E70041D217DD00072EE7B /* IBMCaptureUISDK.framework */; };
+		780E700F1D217E920072EE7B /* IBMCaptureUISDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 780E70041D217DD00072EE7B /* IBMCaptureUISDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		78C8C5321D252FD1003ECE09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C8C51E1D252FD1003ECE09 /* AppDelegate.swift */; };
+		78C8C5331D252FD1003ECE09 /* ImageUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C8C51F1D252FD1003ECE09 /* ImageUploadViewController.swift */; };
+		78C8C5341D252FD1003ECE09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C8C5211D252FD1003ECE09 /* Assets.xcassets */; };
+		78C8C5351D252FD1003ECE09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C8C5221D252FD1003ECE09 /* LaunchScreen.storyboard */; };
+		78C8C5361D252FD1003ECE09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C8C5241D252FD1003ECE09 /* Main.storyboard */; };
+		78C8C5371D252FD1003ECE09 /* fw-shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 78C8C5271D252FD1003ECE09 /* fw-shared.xcconfig */; };
+		78C8C53A1D252FD1003ECE09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C8C52B1D252FD1003ECE09 /* ViewController.swift */; };
+		78C8C53E1D252FE8003ECE09 /* IBM-AutoCaptureSample-iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C8C52D1D252FD1003ECE09 /* IBM-AutoCaptureSample-iOSTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B75028C61C5A3F94000EB3CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B75028A91C5A3F94000EB3CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B75028B01C5A3F94000EB3CF;
+			remoteInfo = IBMDatacapSDKDeskew;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		780E70101D217E920072EE7B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				780E700D1D217E910072EE7B /* IBMCaptureSDK.framework in Embed Frameworks */,
+				780E700F1D217E920072EE7B /* IBMCaptureUISDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5B3A112A6C81FBA37493C526 /* Pods-IBMDatacapSDKDeskew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMDatacapSDKDeskew.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-IBMDatacapSDKDeskew/Pods-IBMDatacapSDKDeskew.debug.xcconfig"; sourceTree = "<group>"; };
+		6635C85BB0A93943C223CE57 /* Pods-IBMDatacapSDKDeskew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMDatacapSDKDeskew.release.xcconfig"; path = "../Pods/Target Support Files/Pods-IBMDatacapSDKDeskew/Pods-IBMDatacapSDKDeskew.release.xcconfig"; sourceTree = "<group>"; };
+		780E70031D217DD00072EE7B /* IBMCaptureSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IBMCaptureSDK.framework; sourceTree = "<group>"; };
+		780E70041D217DD00072EE7B /* IBMCaptureUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IBMCaptureUISDK.framework; sourceTree = "<group>"; };
+		78C8C51E1D252FD1003ECE09 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78C8C51F1D252FD1003ECE09 /* ImageUploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUploadViewController.swift; sourceTree = "<group>"; };
+		78C8C5211D252FD1003ECE09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78C8C5231D252FD1003ECE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78C8C5251D252FD1003ECE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78C8C5271D252FD1003ECE09 /* fw-shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "fw-shared.xcconfig"; sourceTree = "<group>"; };
+		78C8C5281D252FD1003ECE09 /* IBM-AutoCaptureSample-iOS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IBM-AutoCaptureSample-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		78C8C5291D252FD1003ECE09 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78C8C52B1D252FD1003ECE09 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		78C8C52D1D252FD1003ECE09 /* IBM-AutoCaptureSample-iOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IBM-AutoCaptureSample-iOSTests.swift"; sourceTree = "<group>"; };
+		78C8C5311D252FD1003ECE09 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A079EDD7806B00E7EB3834C /* Pods_IBMDatacapSDKDeskew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBMDatacapSDKDeskew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75028B11C5A3F94000EB3CF /* IBM-AutoCaptureSample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IBM-AutoCaptureSample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75028C51C5A3F94000EB3CF /* IBM-AutoCaptureSample-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IBM-AutoCaptureSample-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B75028AE1C5A3F94000EB3CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780E700E1D217E920072EE7B /* IBMCaptureUISDK.framework in Frameworks */,
+				780E700C1D217E910072EE7B /* IBMCaptureSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B75028C21C5A3F94000EB3CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		475D86C62B4EF99516502804 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A079EDD7806B00E7EB3834C /* Pods_IBMDatacapSDKDeskew.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C6C2C098BA6D6E1136E6FCF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B3A112A6C81FBA37493C526 /* Pods-IBMDatacapSDKDeskew.debug.xcconfig */,
+				6635C85BB0A93943C223CE57 /* Pods-IBMDatacapSDKDeskew.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		780E70021D217DD00072EE7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				780E70031D217DD00072EE7B /* IBMCaptureSDK.framework */,
+				780E70041D217DD00072EE7B /* IBMCaptureUISDK.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		78C8C51D1D252FD1003ECE09 /* IBM-AutoCaptureSample-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				78C8C51E1D252FD1003ECE09 /* AppDelegate.swift */,
+				78C8C51F1D252FD1003ECE09 /* ImageUploadViewController.swift */,
+				78C8C5201D252FD1003ECE09 /* Resources */,
+				78C8C5261D252FD1003ECE09 /* Supporting Files */,
+				78C8C52B1D252FD1003ECE09 /* ViewController.swift */,
+			);
+			path = "IBM-AutoCaptureSample-iOS";
+			sourceTree = "<group>";
+		};
+		78C8C5201D252FD1003ECE09 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				78C8C5211D252FD1003ECE09 /* Assets.xcassets */,
+				78C8C5221D252FD1003ECE09 /* LaunchScreen.storyboard */,
+				78C8C5241D252FD1003ECE09 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		78C8C5261D252FD1003ECE09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78C8C5271D252FD1003ECE09 /* fw-shared.xcconfig */,
+				78C8C5281D252FD1003ECE09 /* IBM-AutoCaptureSample-iOS-Bridging-Header.h */,
+				78C8C5291D252FD1003ECE09 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78C8C52C1D252FD1003ECE09 /* IBM-AutoCaptureSample-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				78C8C52D1D252FD1003ECE09 /* IBM-AutoCaptureSample-iOSTests.swift */,
+				78C8C5301D252FD1003ECE09 /* Supporting Files */,
+			);
+			path = "IBM-AutoCaptureSample-iOSTests";
+			sourceTree = "<group>";
+		};
+		78C8C5301D252FD1003ECE09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78C8C5311D252FD1003ECE09 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B75028A81C5A3F94000EB3CF = {
+			isa = PBXGroup;
+			children = (
+				78C8C51D1D252FD1003ECE09 /* IBM-AutoCaptureSample-iOS */,
+				78C8C52C1D252FD1003ECE09 /* IBM-AutoCaptureSample-iOSTests */,
+				780E70021D217DD00072EE7B /* Frameworks */,
+				B75028B21C5A3F94000EB3CF /* Products */,
+				5C6C2C098BA6D6E1136E6FCF /* Pods */,
+				475D86C62B4EF99516502804 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B75028B21C5A3F94000EB3CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B75028B11C5A3F94000EB3CF /* IBM-AutoCaptureSample-iOS.app */,
+				B75028C51C5A3F94000EB3CF /* IBM-AutoCaptureSample-iOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B75028B01C5A3F94000EB3CF /* IBM-AutoCaptureSample-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B75028CE1C5A3F94000EB3CF /* Build configuration list for PBXNativeTarget "IBM-AutoCaptureSample-iOS" */;
+			buildPhases = (
+				B75028AD1C5A3F94000EB3CF /* Sources */,
+				B75028AE1C5A3F94000EB3CF /* Frameworks */,
+				B75028AF1C5A3F94000EB3CF /* Resources */,
+				780E70101D217E920072EE7B /* Embed Frameworks */,
+				780E6FFC1D217CDA0072EE7B /* Strip IBMCaptureSDK */,
+				780E6FFD1D217D010072EE7B /* Strip IBMCaptureUISDK */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IBM-AutoCaptureSample-iOS";
+			productName = IBMDatacapSDKDeskew;
+			productReference = B75028B11C5A3F94000EB3CF /* IBM-AutoCaptureSample-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B75028C41C5A3F94000EB3CF /* IBM-AutoCaptureSample-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B75028D11C5A3F94000EB3CF /* Build configuration list for PBXNativeTarget "IBM-AutoCaptureSample-iOSTests" */;
+			buildPhases = (
+				B75028C11C5A3F94000EB3CF /* Sources */,
+				B75028C21C5A3F94000EB3CF /* Frameworks */,
+				B75028C31C5A3F94000EB3CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B75028C71C5A3F94000EB3CF /* PBXTargetDependency */,
+			);
+			name = "IBM-AutoCaptureSample-iOSTests";
+			productName = IBMDatacapSDKDeskewTests;
+			productReference = B75028C51C5A3F94000EB3CF /* IBM-AutoCaptureSample-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B75028A91C5A3F94000EB3CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Future Workshops";
+				TargetAttributes = {
+					B75028B01C5A3F94000EB3CF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B75028C41C5A3F94000EB3CF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B75028B01C5A3F94000EB3CF;
+					};
+				};
+			};
+			buildConfigurationList = B75028AC1C5A3F94000EB3CF /* Build configuration list for PBXProject "IBM-AutoCaptureSample-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B75028A81C5A3F94000EB3CF;
+			productRefGroup = B75028B21C5A3F94000EB3CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B75028B01C5A3F94000EB3CF /* IBM-AutoCaptureSample-iOS */,
+				B75028C41C5A3F94000EB3CF /* IBM-AutoCaptureSample-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B75028AF1C5A3F94000EB3CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C8C5361D252FD1003ECE09 /* Main.storyboard in Resources */,
+				78C8C5341D252FD1003ECE09 /* Assets.xcassets in Resources */,
+				78C8C5371D252FD1003ECE09 /* fw-shared.xcconfig in Resources */,
+				78C8C5351D252FD1003ECE09 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B75028C31C5A3F94000EB3CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		780E6FFC1D217CDA0072EE7B /* Strip IBMCaptureSDK */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Strip IBMCaptureSDK";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Frameworks/IBMCaptureSDK.framework/strip_framework.sh\"";
+		};
+		780E6FFD1D217D010072EE7B /* Strip IBMCaptureUISDK */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Strip IBMCaptureUISDK";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Frameworks/IBMCaptureUISDK.framework/strip_framework.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B75028AD1C5A3F94000EB3CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C8C5321D252FD1003ECE09 /* AppDelegate.swift in Sources */,
+				78C8C53A1D252FD1003ECE09 /* ViewController.swift in Sources */,
+				78C8C5331D252FD1003ECE09 /* ImageUploadViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B75028C11C5A3F94000EB3CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C8C53E1D252FE8003ECE09 /* IBM-AutoCaptureSample-iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B75028C71C5A3F94000EB3CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B75028B01C5A3F94000EB3CF /* IBM-AutoCaptureSample-iOS */;
+			targetProxy = B75028C61C5A3F94000EB3CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78C8C5221D252FD1003ECE09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78C8C5231D252FD1003ECE09 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		78C8C5241D252FD1003ECE09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78C8C5251D252FD1003ECE09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B75028CC1C5A3F94000EB3CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B75028CD1C5A3F94000EB3CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B75028CF1C5A3F94000EB3CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "IBM-AutoCaptureSample-iOS/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.futureworkshops.IBM-AutoCaptureSample-iOS";
+				PRODUCT_NAME = "IBM-AutoCaptureSample-iOS";
+				SWIFT_OBJC_BRIDGING_HEADER = "IBM-AutoCaptureSample-iOS/Supporting Files/IBM-AutoCaptureSample-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B75028D01C5A3F94000EB3CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "IBM-AutoCaptureSample-iOS/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.futureworkshops.IBM-AutoCaptureSample-iOS";
+				PRODUCT_NAME = "IBM-AutoCaptureSample-iOS";
+				SWIFT_OBJC_BRIDGING_HEADER = "IBM-AutoCaptureSample-iOS/Supporting Files/IBM-AutoCaptureSample-iOS-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		B75028D21C5A3F94000EB3CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "IBM-AutoCaptureSample-iOSTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.futureworkshops.IBM-AutoCaptureSample-iOSTests";
+				PRODUCT_NAME = "IBM-AutoCaptureSample-iOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IBM-AutoCaptureSample-iOS.app/IBM-AutoCaptureSample-iOS";
+			};
+			name = Debug;
+		};
+		B75028D31C5A3F94000EB3CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "IBM-AutoCaptureSample-iOSTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.futureworkshops.IBM-AutoCaptureSample-iOSTests";
+				PRODUCT_NAME = "IBM-AutoCaptureSample-iOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IBM-AutoCaptureSample-iOS.app/IBM-AutoCaptureSample-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B75028AC1C5A3F94000EB3CF /* Build configuration list for PBXProject "IBM-AutoCaptureSample-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B75028CC1C5A3F94000EB3CF /* Debug */,
+				B75028CD1C5A3F94000EB3CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B75028CE1C5A3F94000EB3CF /* Build configuration list for PBXNativeTarget "IBM-AutoCaptureSample-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B75028CF1C5A3F94000EB3CF /* Debug */,
+				B75028D01C5A3F94000EB3CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B75028D11C5A3F94000EB3CF /* Build configuration list for PBXNativeTarget "IBM-AutoCaptureSample-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B75028D21C5A3F94000EB3CF /* Debug */,
+				B75028D31C5A3F94000EB3CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B75028A91C5A3F94000EB3CF /* Project object */;
+}
